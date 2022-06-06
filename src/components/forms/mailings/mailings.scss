@@ -1,0 +1,43 @@
+.mailing {
+    min-height: 393px;
+    padding-top: 111px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__form {
+        margin-top: 30px;
+        max-width: 489px;
+        min-height: 44.75px;
+        background: #FFFFFF;
+        border: 1px solid #F2F2F2;
+        box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+        border-radius: 30px;
+
+        form {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                border: none;
+                border-radius: 30px 0px 0px 30px;
+                width: 61%;
+                outline: none;
+                background: #FFFFFF;
+                padding-left: 33px;
+
+            }
+        }
+    }
+
+    &__letter {
+        font-weight: 400;
+        font-size: 13px;
+        color: #999999;
+        margin-top: 34.8px;
+    }
+}

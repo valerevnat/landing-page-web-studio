@@ -1,0 +1,23 @@
+@import '../../style/variables.scss';
+
+.projects {
+    background: $bcg-main-color;
+    padding-top: 100px;
+
+    &__wrapper {
+        width: 100%;
+        min-height: 775px;
+        margin: 0 auto;
+    }
+
+    &__descr {
+        max-width: 730px;
+        margin: 0 auto;
+    }
+
+    &__carousel {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}

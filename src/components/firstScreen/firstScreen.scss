@@ -1,0 +1,124 @@
+@import '../../style/variables.scss';
+
+.promo {
+    min-height: 100vh;
+    width: 100%;
+    background: url('../../resources/img/header_bg.jpg') center (center/cover) no-repeat;
+
+    &__wrapper {
+        min-height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        width: 829px;
+        color: $text-promo;
+        text-align: center;
+
+        &_header {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        &_subheader {
+            font-weight: 800;
+            font-size: 48px;
+        }
+
+    }
+
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 5;
+    background-color: rgba($color: #000000, $alpha: .2);
+
+
+    &__divider {
+        position: absolute;
+        bottom: 0;
+        background-color: #A1A1A1;
+        opacity: 0.5;
+        height: 1px;
+        width: 100%;
+    }
+
+    .menu {
+        width: 583px;
+        height: 59px;
+        position: absolute;
+        bottom: 0;
+        right: 21%;
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+
+            &_link {
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.5px;
+                text-decoration: none;
+            }
+
+            &_link:hover {
+                padding-bottom: calc(59px - 19.5px - 1px);
+                border-bottom: 2px solid #FFFFFF;
+            }
+        }
+    }
+
+    &__hamburger {
+        display: none;
+    }
+}
+
+.header__click {
+    height: 100vh;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    .menu__click {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .menu__list_click {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .header__hamburger_click {
+        position: absolute;
+        top: 34px;
+        right: 34px;
+
+        span {
+            margin-bottom: -2px;
+
+            &:nth-child(1) {
+                transform: translateY(3px) rotate(-45deg);
+            }
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(3px) rotate(45deg);
+            }
+        }
+    }
+}

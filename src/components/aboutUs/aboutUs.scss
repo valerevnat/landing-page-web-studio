@@ -1,0 +1,70 @@
+@import '../../style/variables.scss';
+
+.about {
+    background: $bcg-main-color;
+    margin-top: 105px;
+    padding: 100px 0 0 15px;
+
+    &__wrapper {
+        max-width: 1110px;
+        max-height: 797px;
+        margin: 0 auto;
+        // position: relative;
+
+        &_divider {
+            // position: absolute;
+            background-color: #E0E0E0;
+            height: 1px;
+            width: 100%;
+            margin-top: 100px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &_descr {
+            width: 489px;
+            min-height: 117px;
+
+            &-link {
+                text-decoration: underline;
+                color: $main-color;
+            }
+        }
+
+        &_photo {
+            max-width: 500px;
+            height: 400px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__projects {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        padding-right: 30px;
+        padding-left: 30px;
+
+        &-item {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: baseline;
+
+            img {
+                max-width: 30px;
+                max-height: 26.47px;
+            }
+        }
+
+        &-item:not(:last-child) {
+            margin-right: 100px;
+        }
+    }
+}

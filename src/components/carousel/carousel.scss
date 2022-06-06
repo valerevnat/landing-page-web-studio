@@ -1,0 +1,39 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import '../../style/variables.scss';
+
+.slick-track {
+    margin-bottom: 51px;
+    margin-top: 51px;
+}
+
+.slick-next:before {
+    content: "\276F";
+    font-size: 39.5px;
+    color: black;
+}
+
+.slick-prev:before {
+    content: "\276E";
+    font-size: 39.5px;
+    color: black;
+}
+
+.slick-dots li button:before {
+    border: 1px solid #909193;
+    border-radius: 100%;
+    color: $bcg-main-color;
+    width: 19px;
+    height: 19px;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: #000000;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

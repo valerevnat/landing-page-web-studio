@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+.title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: $main-color-title;
+
+    &__mini {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    &__normal {
+        font-weight: 400;
+
+        &-projects {
+            margin-left: 20px;
+        }
+    }
+
+    &__left {
+        text-align: left;
+    }
+}
+
+.subtitle {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: $main-color-text;
+    line-height: 25px;
+    margin-top: 50px;
+
+    &__mini {
+        font-size: 14px;
+        text-align: left;
+        line-height: 22px;
+        margin-top: 12px;
+    }
+
+    &__left {
+        text-align: left;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    &__mail {
+        margin-top: 19.89px;
+    }
+
+    &-projects {
+        margin-top: 0;
+    }
+}

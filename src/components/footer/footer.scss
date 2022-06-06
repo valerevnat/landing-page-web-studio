@@ -1,0 +1,56 @@
+@import '../../style/variables.scss';
+
+.lists {
+    min-height: 412px;
+    display: flex;
+    justify-content: center;
+    background-color: $bcg-main-color;
+    padding-top: 70px;
+
+    &__container {
+        width: 1110px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__title {
+        color: black;
+        font-weight: 700;
+        font-size: 12px;
+        margin-bottom: 35px;
+    }
+
+    li {
+        color: $main-color-text;
+        margin-top: 30px;
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: $main-color-text;
+        }
+
+        a:hover {
+            color: $main-color;
+        }
+
+        img {
+            margin-right: 17px;
+        }
+    }
+
+
+    li:before {
+        content: '\203A';
+        font-size: 24.5px;
+        color: $main-color-text;
+        margin-right: 12.6px;
+    }
+
+    .email:before,
+    .tel:before,
+    .location:before {
+        content: '';
+    }
+
+}
